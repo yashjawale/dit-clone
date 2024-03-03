@@ -113,25 +113,6 @@ main > img {
   color: white;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  padding: 48px;
-  margin: 0 auto;
-  margin-top: -24px;
-  text-align: center;
-  justify-items: center;
-}
-
-.grid-container a {
-  display: block;
-  width: 220px;
-}
-.grid-container a img {
-  width: 100%;
-}
-
 footer {
   color: white;
   font-size: 0.8rem;

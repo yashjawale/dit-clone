@@ -6,16 +6,16 @@
     <title>Dr. D. Y. Patil Institute of Technology, Pimpri</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style="position: relative;">
     <!-- NAVBAR -->
-    <header>
-      <div>
+    <header style="display: unset;">
+      <div class="nav-container">
         <div>
           <img src="./images/logo.png" alt="DPU" />
         </div>
-        <div>
+        <div class="nav-text">
           <p>Dr. D. Y. Patil Unitech Society</p>
-          <p>Dr. D. Y. Patil Institute of Technology</p>
+          <p style="font-size: 1.5rem; text-transform: uppercase; font-weight: 600;">Dr. D. Y. Patil Institute of Technology</p>
           <p>
             (formerly Dr. D. Y. Patil Institute of Engineering & Technology)
           </p>
@@ -63,9 +63,9 @@
     </main>
 
     <!-- COLLEGE PROFILE -->
-    <section>
+    <section class="two-column" id="profile-section">
       <div>
-        <h2>College Profile</h2>
+        <h2 class="heading">College Profile</h2>
         <p>
           Welcome to Dr. D. Y. Patil Institute of Technology (DIT), Pimpri,
           Pune. The oldest campus of Dr. D. Y. Patil group of Institutions. This
@@ -81,6 +81,7 @@
           the heart of the city. Walkable distance from public transports such
           as Bus, Railway and Metro.
         </p>
+        <a href="#" class="my-link">Read More</a>
       </div>
       <div>
         <img src="./images/video.png" alt="Video" />
@@ -89,9 +90,9 @@
 
     <!-- BLOGS -->
     <section>
-      <h2>Our Blogs</h2>
-      <div>
-        <div>
+      <h2 class="heading">Our Blogs</h2>
+      <div class="two-column">
+        <div class="blog-card">
           <img src="./images/blog1.jpg" alt="Maha RERA" />
           <h3>Importance of RERA in Maharashtra</h3>
           <p>
@@ -99,9 +100,9 @@
             Objectives, Duties, and Provisions. Learn About Registration,
             Grievance...
           </p>
-          <a href="#">Read More</a>
+          <a href="#" class="my-link">Read More</a>
         </div>
-        <div>
+        <div class="blog-card">
           <img src="./images/blog2.jpg" alt="Aqua Revolution" />
           <h3>
             Aqua Revolution: Forward-thinking Approaches to Water and Wastewater
@@ -112,15 +113,15 @@
             Water Pollution and Scarcity While Enhancing Sustainability and
             Resource...
           </p>
-          <a href="#">Read More</a>
+          <a href="#" class="my-link">Read More</a>
         </div>
       </div>
     </section>
 
     <!-- QUICK LINKS -->
-    <section>
-      <h2>Quick Links</h2>
-      <div>
+    <section id="grid-section">
+      <h2 class="heading">Quick Links</h2>
+      <div class="grid-container">
         <a href="#"><img src="./images/grid/cast-discrimination.jpg" alt="Caste Discrimination" /></a>
         <a href="#"><img src="./images/grid/grievance-redressal.jpg" alt="Grievance Redressal" /></a>
         <a href="#"><img src="./images/grid/women-harassment.png" alt="Women Harassment" /></a>
@@ -136,10 +137,21 @@
       </div>
     </section>
 
+    <!-- ADMISSION BUTTON -->
+    <button id="admission-button">
+      Admission Enquiry
+    </button>
+
     <footer>
-      Copyright © 2024 All Rights Reserved | By Software Development Cell, Dr.
-      D. Y. Patil Unitech Society, PuneCopyright © 2024 All Rights Reserved | By
-      Software Development Cell, Dr. D. Y. Patil Unitech Society, Pune
+      Copyright © 2024 All Rights Reserved | By Google Developer Students Club, Dr.
+      D. Y. Patil Unitech Society, Pune
     </footer>
+
+    <script>
+      const admissionButton = document.getElementById("admission-button");
+      admissionButton.addEventListener("click", () => {
+        alert("Admission button clicked!")
+      });
+    </script>
   </body>
 </html>

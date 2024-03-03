@@ -1,0 +1,160 @@
+:root {
+  --dpu-red: #932120;
+}
+
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  display: flex;
+  color: var(--dpu-red);
+  align-items: center;
+  gap: 2rem;
+  padding: 24px;
+}
+
+.nav-text {
+  text-align: center;
+  line-height: 1.2;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 8px;
+  border-top: solid var(--dpu-red) 1px;
+  border-bottom: solid var(--dpu-red) 2px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 12px;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+main > img {
+  width: 100%;
+}
+
+.heading {
+  font-weight: bold;
+  color: var(--dpu-red);
+  position: relative;
+  text-align: center;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.heading:after {
+  content: '';
+  width: 48px;
+  height: 3px;
+  background-color: #117fc9;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#profile-section p {
+  line-height: 1.5rem;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.two-column {
+  display: flex;
+  gap: 2rem;
+  padding: 48px;
+}
+.two-column div {
+  flex: 1;
+}
+.two-column div img {
+  width: 100%;
+}
+
+.blog-card {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.my-link {
+  text-decoration: none;
+  color: #755079;
+  border: 1px solid #755079;
+  width: fit-content;
+  padding: 8px;
+  font-size: 14px;
+  margin: 4px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  display: inline-block;
+}
+
+.my-link:hover {
+  background-color: #755079;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 48px;
+  margin: 0 auto;
+  margin-top: -24px;
+  text-align: center;
+  justify-items: center;
+}
+
+.grid-container a {
+  display: block;
+  width: 220px;
+}
+.grid-container a img {
+  width: 100%;
+}
+
+footer {
+  color: white;
+  font-size: 0.8rem;
+  background: var(--dpu-red);
+  text-align: center;
+  padding: 12px;
+  font-weight: 500;
+}
+
+#admission-button {
+  background-color: var(--dpu-red);
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease;
+  position: fixed;
+  right: -70px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  cursor: pointer;
+}
+
+#admission-button:hover {
+  filter: brightness(1.5);
+}

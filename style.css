@@ -6,44 +6,46 @@
   font-family: sans-serif;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
-.nav-container {
+.nav-container{
   display: flex;
-  color: var(--dpu-red);
+  /* flex-wrap: wrap; */
+  /* gap: 10px; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column-reverse; */
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
   padding: 24px;
 }
 
-.nav-text {
+.nav-head{
   text-align: center;
-  line-height: 1.2;
-  font-size: 0.9rem;
-  flex: 1;
+  color: var(--dpu-red);
 }
 
-nav {
+.nav-contact{
+  text-align: center;
+  color: var(--dpu-red);
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  padding: 0 12px;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+nav{
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   padding: 8px;
   border-top: solid var(--dpu-red) 1px;
   border-bottom: solid var(--dpu-red) 2px;
-  position: sticky;
-  top: 0;
-  left: 0;
   background-color: white;
-  z-index: 10;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-  padding: 0 12px;
-  font-weight: 300;
-  font-size: 1.1rem;
 }
 
 main > img {
@@ -59,7 +61,7 @@ main > img {
   margin-bottom: 16px;
 }
 
-.heading:after {
+/* .heading:after {
   content: '';
   width: 48px;
   height: 3px;
@@ -68,19 +70,20 @@ main > img {
   bottom: -2px;
   left: 50%;
   transform: translate(-50%);
-}
+} */
 
 #profile-section p {
-  line-height: 1.5rem;
   font-size: 18px;
   margin-bottom: 24px;
 }
+
 
 .two-column {
   display: flex;
   gap: 2rem;
   padding: 48px;
 }
+
 .two-column div {
   flex: 1;
 }
@@ -88,29 +91,24 @@ main > img {
   width: 100%;
 }
 
-.blog-card {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
 .my-link {
   text-decoration: none;
   color: #755079;
   border: 1px solid #755079;
-  width: fit-content;
   padding: 8px;
   font-size: 14px;
   margin: 4px;
-  transition: color 0.2s ease, background-color 0.2s ease;
-  display: inline-block;
+  width: fit-content;
 }
 
-.my-link:hover {
-  background-color: #755079;
-  color: white;
+.blog-card{
+  margin: 1rem;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
 }
 
 footer {
@@ -134,8 +132,4 @@ footer {
   top: 50%;
   transform: translateY(-50%) rotate(-90deg);
   cursor: pointer;
-}
-
-#admission-button:hover {
-  filter: brightness(1.5);
 }

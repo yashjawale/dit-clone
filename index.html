@@ -6,16 +6,28 @@
     <title>Dr. D. Y. Patil Institute of Technology, Pimpri</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="position: relative;">
-    <!-- NAVBAR -->
-    <header style="display: unset;">
+  <body>
+    <!-- HEADER -->
+    <header>
       <div class="nav-container">
-        <div>
-          <img src="./images/logo.png" alt="DPU" />
+        <div class="nav-logo">
+          <img
+            src="https://github.com/yashjawale/dit-clone/blob/main/images/logo.png?raw=true"
+            alt="dit-logo"
+            class="logo"
+          />
         </div>
-        <div class="nav-text">
+        <div class="nav-head">
           <p>Dr. D. Y. Patil Unitech Society</p>
-          <p style="font-size: 1.5rem; text-transform: uppercase; font-weight: 600;">Dr. D. Y. Patil Institute of Technology</p>
+          <p
+            style="
+              font-size: 1.5rem;
+              text-transform: uppercase;
+              font-weight: 600;
+            "
+          >
+            Dr. D. Y. Patil Institute of Technology
+          </p>
           <p>
             (formerly Dr. D. Y. Patil Institute of Engineering & Technology)
           </p>
@@ -29,7 +41,7 @@
             'A++' Grade
           </p>
         </div>
-        <div>
+        <div class="nav-contact">
           <p>
             Admission Enguiry: <br />
             +917767015941 <br />
@@ -56,9 +68,11 @@
       </nav>
     </header>
 
-    <!-- SLIDESHOW IMAGE -->
     <main>
-      <img src="./images/slider.jpeg" alt="Slide 1" />
+      <img
+        src="https://github.com/yashjawale/dit-clone/blob/main/images/slider.jpeg?raw=true"
+        alt="Slide 1"
+      />
       <!-- Ideally, should also be having textual elements in this block -->
     </main>
 
@@ -84,7 +98,10 @@
         <a href="#" class="my-link">Read More</a>
       </div>
       <div>
-        <img src="./images/video.png" alt="Video" />
+        <img
+          src="https://github.com/yashjawale/dit-clone/blob/main/images/video.png?raw=true"
+          alt="Video"
+        />
       </div>
     </section>
 
@@ -93,7 +110,10 @@
       <h2 class="heading">Our Blogs</h2>
       <div class="two-column">
         <div class="blog-card">
-          <img src="./images/blog1.jpg" alt="Maha RERA" />
+          <img
+            src="https://github.com/yashjawale/dit-clone/blob/main/images/blog1.jpg?raw=true"
+            alt="Maha RERA"
+          />
           <h3>Importance of RERA in Maharashtra</h3>
           <p>
             Explore the Significance of Rera in Maharashtra, Covering Mharera's
@@ -103,7 +123,10 @@
           <a href="#" class="my-link">Read More</a>
         </div>
         <div class="blog-card">
-          <img src="./images/blog2.jpg" alt="Aqua Revolution" />
+          <img
+            src="https://github.com/yashjawale/dit-clone/blob/main/images/blog2.jpg?raw=true"
+            alt="Aqua Revolution"
+          />
           <h3>
             Aqua Revolution: Forward-thinking Approaches to Water and Wastewater
             Purification
@@ -117,21 +140,19 @@
         </div>
       </div>
     </section>
-
     <!-- ADMISSION BUTTON -->
-    <button id="admission-button">
-      Admission Enquiry
-    </button>
+    <button id="admission-button">Admission Enquiry</button>
 
+    <!-- FOOTER -->
     <footer>
-      Copyright © 2024 All Rights Reserved | By Google Developer Students Club, Dr.
-      D. Y. Patil Unitech Society, Pune
+      Copyright © 2024 All Rights Reserved | By Google Developer Students Club,
+      Dr. D. Y. Patil Unitech Society, Pune
     </footer>
 
     <script>
       const admissionButton = document.getElementById("admission-button");
       admissionButton.addEventListener("click", () => {
-        alert("Admission button clicked!")
+        alert("Admission button clicked!");
       });
     </script>
   </body>
